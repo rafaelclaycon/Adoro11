@@ -89,10 +89,8 @@
 		D935D9DD2B2E0BAB003E8ABC /* Adoro11 */ = {
 			isa = PBXGroup;
 			children = (
-				D935D9DE2B2E0BAB003E8ABC /* Adoro11App.swift */,
-				D935D9E02B2E0BAB003E8ABC /* ContentView.swift */,
-				D935D9E22B2E0BAD003E8ABC /* Assets.xcassets */,
-				D935D9E42B2E0BAD003E8ABC /* Preview Content */,
+				D935DA082B2E0E70003E8ABC /* Sources */,
+				D935DA092B2E0E79003E8ABC /* Resources */,
 			);
 			path = Adoro11;
 			sourceTree = "<group>";
@@ -111,6 +109,40 @@
 				D935D9EF2B2E0BAE003E8ABC /* Adoro11Tests.swift */,
 			);
 			path = Adoro11Tests;
+			sourceTree = "<group>";
+		};
+		D935DA082B2E0E70003E8ABC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D935DA0B2B2E0E9D003E8ABC /* Features */,
+				D935DA0A2B2E0E88003E8ABC /* AppSupport */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D935DA092B2E0E79003E8ABC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D935D9E22B2E0BAD003E8ABC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D935DA0A2B2E0E88003E8ABC /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D935D9DE2B2E0BAB003E8ABC /* Adoro11App.swift */,
+				D935D9E42B2E0BAD003E8ABC /* Preview Content */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		D935DA0B2B2E0E9D003E8ABC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D935D9E02B2E0BAB003E8ABC /* ContentView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Adoro11/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Adoro11/Sources/AppSupport/Preview Content\"";
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -440,7 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Adoro11/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Adoro11/Sources/AppSupport/Preview Content\"";
 				DEVELOPMENT_TEAM = L8X3H5XA82;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
