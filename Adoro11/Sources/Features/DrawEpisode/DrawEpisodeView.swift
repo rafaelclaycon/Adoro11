@@ -9,15 +9,29 @@ import SwiftUI
 
 struct DrawEpisodeView: View {
 
+    @State private var totalEpisodeCount: Int = 489
+    @State private var pickedEpisode: String = "🔮"
+
     var body: some View {
         NavigationStack {
-            VStack {
-                Button("Sortear") {
-                    print("Sorteio")
+            VStack(spacing: 25) {
+                Text(pickedEpisode)
+                    .font(.largeTitle)
+                    .bold()
+
+                Button("Sortear episódio") {
+                    drawNumber()
                 }
+                .borderedProminentButton(colored: .blue)
+                .bold()
             }
             .navigationTitle("Sorteio")
         }
+    }
+
+    func drawNumber() {
+        let number = Int.random(in: 1..<totalEpisodeCount)
+        pickedEpisode = "\(number)"
     }
 }
 
