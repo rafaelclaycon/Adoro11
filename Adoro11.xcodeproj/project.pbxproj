@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D935D9DF2B2E0BAB003E8ABC /* Adoro11App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935D9DE2B2E0BAB003E8ABC /* Adoro11App.swift */; };
-		D935D9E12B2E0BAB003E8ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935D9E02B2E0BAB003E8ABC /* ContentView.swift */; };
+		D935D9E12B2E0BAB003E8ABC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935D9E02B2E0BAB003E8ABC /* MainView.swift */; };
 		D935D9E32B2E0BAD003E8ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D935D9E22B2E0BAD003E8ABC /* Assets.xcassets */; };
 		D935D9E62B2E0BAD003E8ABC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D935D9E52B2E0BAD003E8ABC /* Preview Assets.xcassets */; };
 		D935D9F02B2E0BAE003E8ABC /* Adoro11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935D9EF2B2E0BAE003E8ABC /* Adoro11Tests.swift */; };
+		D935DA0E2B2E1026003E8ABC /* DrawEpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935DA0D2B2E1026003E8ABC /* DrawEpisodeView.swift */; };
+		D935DA112B2E10C1003E8ABC /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D935DA102B2E10C1003E8ABC /* EpisodeListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,14 @@
 /* Begin PBXFileReference section */
 		D935D9DB2B2E0BAB003E8ABC /* Adoro11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adoro11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D935D9DE2B2E0BAB003E8ABC /* Adoro11App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adoro11App.swift; sourceTree = "<group>"; };
-		D935D9E02B2E0BAB003E8ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D935D9E02B2E0BAB003E8ABC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D935D9E22B2E0BAD003E8ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D935D9E52B2E0BAD003E8ABC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D935D9EB2B2E0BAE003E8ABC /* Adoro11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adoro11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D935D9EF2B2E0BAE003E8ABC /* Adoro11Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adoro11Tests.swift; sourceTree = "<group>"; };
 		D935D9F52B2E0BAE003E8ABC /* Adoro11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adoro11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D935DA0D2B2E1026003E8ABC /* DrawEpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawEpisodeView.swift; sourceTree = "<group>"; };
+		D935DA102B2E10C1003E8ABC /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +144,27 @@
 		D935DA0B2B2E0E9D003E8ABC /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				D935D9E02B2E0BAB003E8ABC /* ContentView.swift */,
+				D935D9E02B2E0BAB003E8ABC /* MainView.swift */,
+				D935DA0C2B2E0FC0003E8ABC /* DrawEpisode */,
+				D935DA0F2B2E10AA003E8ABC /* EpisodeList */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		D935DA0C2B2E0FC0003E8ABC /* DrawEpisode */ = {
+			isa = PBXGroup;
+			children = (
+				D935DA0D2B2E1026003E8ABC /* DrawEpisodeView.swift */,
+			);
+			path = DrawEpisode;
+			sourceTree = "<group>";
+		};
+		D935DA0F2B2E10AA003E8ABC /* EpisodeList */ = {
+			isa = PBXGroup;
+			children = (
+				D935DA102B2E10C1003E8ABC /* EpisodeListView.swift */,
+			);
+			path = EpisodeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D935D9E12B2E0BAB003E8ABC /* ContentView.swift in Sources */,
+				D935DA112B2E10C1003E8ABC /* EpisodeListView.swift in Sources */,
+				D935DA0E2B2E1026003E8ABC /* DrawEpisodeView.swift in Sources */,
+				D935D9E12B2E0BAB003E8ABC /* MainView.swift in Sources */,
 				D935D9DF2B2E0BAB003E8ABC /* Adoro11App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
